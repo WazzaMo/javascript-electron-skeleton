@@ -12,7 +12,7 @@ This project just uses NPM to build and develop.
 | Command | Action |
 |---------|--------|
 | `npm start` | Will generate the HTML and do live-watch on source files with electron. |
-| `npm dist`  | Will build the electron application. |
+| `npm run dist`  | Will build the electron application. |
 
 ### Directories
 
