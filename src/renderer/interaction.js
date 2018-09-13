@@ -1,9 +1,9 @@
 
 const ID_FIRST_ICON = "Icon"
 
-import ICON_PLANNING from './assets/Icon-Planning.png'
-import ICON_EXECUTION from './assets/Icon-Execution.png'
-import ICON_REPORT from './assets/Icon-Report.png'
+const ICON_PLANNING = './assets/Icon-Planning.png'
+const ICON_EXECUTION = './assets/Icon-Execution.png'
+const ICON_REPORT = './assets/Icon-Report.png'
 
 
 const BTN_CONCEPT = "BtnConcept"

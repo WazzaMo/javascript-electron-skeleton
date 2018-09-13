@@ -1,16 +1,8 @@
 const { format } = require('url')
 
 const { BrowserWindow, app } = require('electron')
-const isDev = require('electron-is-dev')
-const { resolve } = require('app-root-path')
 
-const devPath = 'http://localhost:8888'
-const prodPath = format({
-  pathname: resolve('app/renderer/production/index.html'),
-  protocol: 'file:',
-  slashes: true
-})
-
+const isDev = false;
 
 app.on('ready', async () => {
   const mainWindow = new BrowserWindow({
@@ -26,10 +18,8 @@ app.on('ready', async () => {
     }
   })
 
-  const url = isDev ? devPath : prodPath
-
   mainWindow.setMenu(null)
-  mainWindow.loadURL(url)
+  mainWindow.loadURL(`file://${__dirname}/../renderer/index.html`)
 })
 
 app.on('window-all-closed', app.quit)
